@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معهد المدينة العالي للإدارة</title>
+    <link rel="stylesheet" href="SS.CSS">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="cropped-cropped-1-4.png" alt="شعار معهد المدينة" class="logo">
+            <h1>معهد المدينة العالي للهندسة والتكنولوجيا</h1>
+        </header>
+        <main>
+            <p>في حالة عدم تمكنك من الحصول على النتيجة عليك بالتوجه للإدارة المالية أو الإتصال بالخط الساخن رقم <strong>19203</strong></p>
+            <form id="studentForm">
+                <label for="student-code">ادخل كود الطالب</label>
+                <input type="text" id="student-code" placeholder="Enter Code">
+
+                <label for="national-id">ادخل الرقم القومي</label>
+                <input type="text" id="national-id" placeholder="Enter National ID">
+
+                <button type="submit">عرض النتيجة</button>
+                <p id="error-message" class="error"></p>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
