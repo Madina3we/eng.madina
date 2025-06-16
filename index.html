@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>معهد المدينة العالي للإدارة</title>
-    <link rel="stylesheet" href="SS.CSS">
+    <link rel="stylesheet" href="ss.css">
 </head>
 <body>
     <div class="container">
@@ -19,7 +19,7 @@
                 <input type="text" id="student-code" placeholder="Enter Code">
 
                 <label for="national-id">ادخل الرقم القومي</label>
-                <input type="text" id="national-id" placeholder="Enter National ID">
+                <input type="text" id="national-id" placeholder="Enter NationaliD">
 
                 <button type="submit">عرض النتيجة</button>
                 <p id="error-message" class="error"></p>
@@ -27,6 +27,41 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="java.js"></script>
+
+    <!-- مكان عرض النتيجة -->
+<div id="result-container" style="display:none; margin-top: 20px;">
+    <div class="student-info">
+        <p><strong>الرقم الأكاديمي:</strong> 200075</p>
+        <p><strong>اسم الطالب:</strong> محمد احمد عوض الكريم عبد العال</p>
+        <p><strong>GPA:</strong> 1.2 نقطة</p>
+        <p>notes:</p>
+    </div>
+
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>CourseId</th>
+                <th>CourseName</th>
+                <th>Grade</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HUMN-X02</td>
+                <td>تأثير التكنولوجيا على المجتمع</td>
+                <td> A- </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CIVL-221</td>
+                <td>مواد هندسة مدنية (||)</td>
+                <td>D</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
